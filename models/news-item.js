@@ -4,8 +4,10 @@
     this._headline = text;
   }
 
-  NewsItem.prototype.showText = function() {
+  NewsItem.prototype.showHeadline = function() {
     return this._headline;
   };
+
   exports.NewsItem = NewsItem;
 })(this);
+
