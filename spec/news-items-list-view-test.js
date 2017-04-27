@@ -1,7 +1,6 @@
-function testViewList() {
-  var listNews = new ListNews();
-  listNews.loadNews('The scourge of catnip on young kittens -shocking news!');
-  var viewList = new ViewList(listNews);
-  assert.isTrue(viewList.list() === '<ul><li>The scourge of catnip on young kittens -shocking news!</li></ul>');
+function testHeadlineView() {
+  var headlines = ["Jess", "Elaine"]
+  var headlineView = new HeadlineView(listNews);
+  assert.isTrue(headlineView.viewHeadlines() === '<ul><li><div>Jess</div></li><li><div>Elaine</div></li></ul>');
 }
-testViewList();
+testHeadlineView();
